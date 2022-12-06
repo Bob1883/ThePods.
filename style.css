@@ -2,6 +2,7 @@ body {
     background-color: #1F1F1F;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
+    margin-bottom: 2%;
 }
 
 :root {
@@ -18,7 +19,7 @@ body {
     color: var(--text-color1);
     text-align: center;
     font-size: 100px;
-    margin-top: 35vh;
+    margin-top: 45vh;
 }
 
 .sideNav {
@@ -73,6 +74,10 @@ body {
     font-size: var(--paragraph-size);
     color: var(--text-color2);
     width: var(--pod-size);
+    height: var(--pod-size);
+    border-radius: 10px;
+    position: absolute;
+    transition: var(--transition-time);
     padding: 7px;
 }
 
@@ -87,4 +92,33 @@ body {
 
 .podCard p:nth-child(1){
     font-size: var(--pod-title);
+}
+
+.popup {
+    background-color: red;
+    transition: var(--transition-time);
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    z-index: 10;
+}
+
+.popup:hover ~ .podTitle{
+    opacity: 100%;
+    color: blue;
+}
+
+.podCastPlaceHolder {
+    justify-content: space-evenly;
+    width: var(--pod-size);
+    height: var(--pod-size);
+    border-radius: 10px;
+}
+
+.podContaner{
+    position: relative;
+    width: var(--pod-size);
+    height: var(--pod-size);
 }
