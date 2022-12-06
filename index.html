@@ -12,17 +12,48 @@
 <body>
     <p class="title">ThePods</p>
     <div class="sideNav">
-        <p>Home</p>
-        <p>Back</p>
+        <a href="#featured">
+            Featured
+            <img class="sideNavIcon" src="img/featured.png" alt="Featured"></img>
+        </a>
+
+        <a href="#allPods">
+            All pods
+            <img class="sideNavIcon" src="img/allPods.png" alt="All pods"></img>
+        </a>
+
+        <a href="#about">
+            About
+            <img class="sideNavIcon" src="img/about.png" alt="About"></img>
+        </a>
+
+        <a href="#contact">
+            Contact
+            <img class="sideNavIcon" src="img/contact.png" alt="Contact"></img>
+        </a>
+
     </div>
-    <div class="featured">
+    <div class="topnav">
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#featured">Featured</a>
+            <a href="#allPods">All pods</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="featured" id="featured">
         <p>Featured pod</p>
         <div class="featuredPod">
             <p>Tekinkpodden</p>
             <p>Featuring: August, William, Tuva, Tim</p>
         </div>
     </div>
-    <p class="allPodsTitle">Pods</p>
+    <p class="allPodsTitle" id="allPods">Pods</p>
     <div class="allPods">
         <div class="podCountaner">
             <div class="podCard" id="podCard">
@@ -57,6 +88,21 @@
             </div>
             <div class="podCastPlaceHolder"></div>
         </div>
+    </div>
+    <p class="aboutTitle">About</p>
+    <div class="about" id="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eaque, earum soluta quisquam officia nulla
+            recusandae in veniam suscipit autem sequi distinctio, ut sed repellat commodi, adipisci eius aliquid
+            quibusdam.</p>
+    </div>
+    <p class="contactTitle">Contact</p>
+    <div class="contact" id="contact">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eaque, earum soluta quisquam officia nulla
+            recusandae in veniam suscipit autem sequi distinctio, ut sed repellat commodi, adipisci eius aliquid
+            quibusdam.</p>
+
+        <img src="img/phone.png" alt="phone" width="75px">
+        <img src="img/mail.png" alt="mail" width="75px">
     </div>
 </body>
 <script src="scripts/script.js"></script>

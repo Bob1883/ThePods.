@@ -24,15 +24,28 @@ body {
 
 .sideNav {
     background-color: antiquewhite;
-    width: 75px;
-    height: 400px;
+    width: 100px;
+    height: 500px;
     position: fixed;
     top: 200px;
     left: 100px;
     border-radius: 20px;
+    padding-top: 75px;
     text-align: center;
-    color: var(--text-color2);
+    padding: 10px;
 }
+
+.sideNav a {
+    text-decoration: none;
+    color: var(--text-color2);
+    font-size: var(--paragraph-size);
+}
+
+.sideNavIcon {
+    width: 72px;
+    margin-bottom: 35px;
+}
+
 
 .featured {
     text-align: center;
@@ -79,6 +92,7 @@ body {
     position: absolute;
     transition: var(--transition-time);
     padding: 7px;
+    margin-bottom: 20px;
 }
 
 .podTitle {
@@ -121,4 +135,98 @@ body {
     position: relative;
     width: var(--pod-size);
     height: var(--pod-size);
+}
+
+/* TOP NAVIGATION */
+
+.topnav {
+    visibility: hidden;
+}
+@media only screen and (max-width: 1200px) {
+    .sideNav {
+        visibility: hidden;
+    }
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 80px;
+        right: 2%;
+        transition: var(--transition-time);
+        visibility: visible;
+        z-index: 20;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+        transition: var(--transition-time);
+    }
+    
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        transition: var(--transition-time);
+    }
+    
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        content: url(/img/menu.png);
+        width: 20px;
+        position: fixed;
+        display: block;
+        right: 2%;
+        top: 20px;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        transition: var(--transition-time);
+    }
+}
+
+
+/* ABOUT */
+.aboutTitle {
+    font-size: var(--subtitle-size);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about {
+    font-size: var(--paragraph-size);
+    text-align: center;
+    background-color: antiquewhite;
+    color: var(--text-color2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 15% 20px 15%;
+}
+
+/* CONTACT */
+.contactTitle {
+    font-size: var(--subtitle-size);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.contact {
+    font-size: var(--paragraph-size);
+    text-align: center;
+    background-color: antiquewhite;
+    color: var(--text-color2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 15% 20px 15%;
+}
+
+.contact img {
+    margin: 0 20%;
 }
