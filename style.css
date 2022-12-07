@@ -28,7 +28,7 @@ body {
     height: 500px;
     position: fixed;
     top: 200px;
-    left: 100px;
+    left: 50px;
     border-radius: 20px;
     padding-top: 75px;
     text-align: center;
@@ -92,7 +92,6 @@ body {
     position: absolute;
     transition: var(--transition-time);
     padding: 7px;
-    margin-bottom: 20px;
 }
 
 .podTitle {
@@ -109,7 +108,7 @@ body {
 }
 
 .popup {
-    background-color: red;
+    background-color: antiquewhite;
     transition: var(--transition-time);
     width: 50%;
     height: 50%;
@@ -117,11 +116,6 @@ body {
     top: 25%;
     left: 25%;
     z-index: 10;
-}
-
-.popup:hover ~ .podTitle{
-    opacity: 100%;
-    color: blue;
 }
 
 .podCastPlaceHolder {
