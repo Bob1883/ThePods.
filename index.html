@@ -7,9 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThePods</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
+    <div id="popup"  class="closed">
+        <div id="popup-content">
+          <div style="display: flex;" id="popup-text">
+            <div style="width: 50%; height: 100%;">
+              <audio src="" id="audio-player"></audio>
+              <div class="content-contaner">
+                <img src="" alt="" style="width: 100%; border-radius: 50px;">
+                <div id="controls">
+                  <button id="skip-backward-button"><i class="fas fa-backward"></i></button>
+                  <button id="play-pause-button">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button id="stop-button">
+                    <i class="fas fa-stop"></i>
+                  </button>
+                  <button id="skip-forward-button"><i class="fas fa-forward"></i></button>
+                </div>
+      
+            <div class="progress-bar-container">
+              <div id="progress-bar2"></div>
+              <img class="podImage" src="img/progressBar.png" alt="progress bar">
+            </div>
+          </div>
+        </div>
+        <div style="width: 50%; height: 100%; padding: 15px;">
+          <button id="close-button">x</button>   
+          <h2 style="color: #F87060;"></h2>
+          <h3 style="color: #F87060;"></h3>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+
+
     <p class="title">ThePods</p>
     <div class="sideNav">
         <a href="#featured">
@@ -56,7 +92,7 @@
     <p class="allPodsTitle" id="allPods">Pods</p>
     <div class="allPods">
         <div class="podCountaner">
-            <div class="podCard" id="podCard">
+            <div class="podCard" id="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_10.png" data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
                 <div class="podTitle">
                     <p>Title</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
@@ -67,7 +103,7 @@
             <div class="podCastPlaceHolder"></div>
         </div>
         <div>
-            <div class="podCard" id="podCard">
+            <div class="podCard" id="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_11.png" data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
                 <div class="podTitle">
                     <p>Title</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
@@ -78,7 +114,7 @@
             <div class="podCastPlaceHolder"></div>
         </div>
         <div>
-            <div class="podCard" id="podCard">
+            <div class="podCard" id="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_12.png" data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
                 <div class="podTitle">
                     <p>Title</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
