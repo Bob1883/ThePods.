@@ -8,16 +8,16 @@ function myFunction() {
     }
   }
 
-const skipBackwardButton = document.getElementById('skip-backward-button');
-const skipForwardButton = document.getElementById('skip-forward-button');
-const playPauseButton = document.getElementById('play-pause-button');
-const progressBar2 = document.getElementById('progress-bar2');
-const progressBar = document.getElementById('progress-bar');
-const audioPlayer = document.getElementById('audio-player');
-const closeButton = document.getElementById("close-button");
+const skipBackwardButton = document.getElementById('skipBackwardButton');
+const skipForwardButton = document.getElementById('skipForwardButton');
+const playPauseButton = document.getElementById('playPauseButton');
+const progressBar2 = document.getElementById('progressBar2');
+const progressBar = document.getElementById('progressBar');
+const audioPlayer = document.getElementById('audioPlayer');
+const closeButton = document.getElementById("closeButton");
 const rectangles = document.querySelectorAll(".podCard");
-const stopButton = document.getElementById('stop-button');
-const popupText = document.getElementById("popup-text");
+const stopButton = document.getElementById('stopButton');
+const popupText = document.getElementById("popupText");
 const popup = document.getElementById("popup");
 
 function updatePlayPauseButton() {
@@ -63,7 +63,7 @@ function stopAudio() {
 function updateProgressBar() {
     const currentTime = audioPlayer.currentTime;
     const totalLength = audioPlayer.duration;
-    const progress = (currentTime / totalLength) * 100;
+    const progress = (currentTime / totalLength) * 95;
     progressBar2.style.width = `${progress}%`;
 }
 

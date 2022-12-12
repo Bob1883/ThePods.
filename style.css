@@ -83,25 +83,42 @@ body {
 }
 
 .podCard {
-    background-color: antiquewhite;
     font-size: var(--paragraph-size);
     color: var(--text-color2);
     width: var(--pod-size);
     height: var(--pod-size);
-    border-radius: 10px;
     position: absolute;
     transition: var(--transition-time);
-    padding: 7px;
+    cursor: pointer;
 }
 
 .podTitle {
     opacity: 0%;
     transition: var(--transition-time);
+    position: absolute;
 }
 
 .podTitle:hover{
     opacity: 100%;
+    filter: none;
+    top: 0;
+    left: 0;
 }
+
+.podCardIMG {
+    width: var(--pod-size);
+    border-radius: 10px;
+}
+
+
+.podCard:hover .podCardIMG {
+    filter: blur(10px);
+}
+
+.podCard:hover .podTitle {
+    z-index: 10;
+}
+
 
 .podCard p:nth-child(1){
     font-size: var(--pod-title);
@@ -223,7 +240,7 @@ body {
 }
 
 
-#stop-button {
+#stopButton {
     color: #F87060;
     background: none;
     cursor: pointer;
@@ -232,28 +249,28 @@ body {
     border: none;
 }
 
-#stop-button i {
+#stopButton i {
     font-size: 30px;
 }
 
 
-#play-pause-button {
+#playPauseButton {
     color: #F87060;
     background: none;
     margin-right: 1%;
     border: none;
 }
 
-#play-pause-button.active {
+#playPauseButton.active {
     color: #000000;
 }
 
-#play-pause-button i {
+#playPauseButton i {
     font-size: 30px;
     transition: 1s;
 }
 
-.progress-bar-container {
+.progressBarContainer {
     background-color: #f86f606a;
     position: relative;
     width: 100%;
@@ -269,7 +286,7 @@ body {
     top: 0;
 }
 
-#progress-bar2 {
+#progressBar2 {
     background-color: #F87060;
     margin-left: 3%;
     transition: 2s;
@@ -278,25 +295,25 @@ body {
     z-index: 1;
 }
 
-#skip-backward-button {
+#skipBackwardButton {
     margin-right: 5%;
     background: none;
     color: #F87060;
     border: none;
 }
 
-#skip-backward-button i {
+#skipBackwardButton i {
     font-size: 30px;
 }
 
-#skip-forward-button {
+#skipForwardButton {
     background: none;
     color: #F87060;
     margin-left: 5%;
     border: none;
 }
 
-#skip-forward-button i {
+#skipForwardButton i {
     font-size: 30px;
 }
 
@@ -311,7 +328,7 @@ body {
     top: 0;
 }
 
-#popup-content {
+#popupContent {
     background-color: #3A3A3A;
     border-radius: 50px;
     margin: auto;
@@ -321,7 +338,7 @@ body {
     width: 700px;
 }
 
-#close-button {
+#closeButton {
     color: #F87060;
     background: none;
     margin-left: 90%;
@@ -330,11 +347,3 @@ body {
     border: none;
     top: 0;
 }
-
-.podCard {
-    background-color: antiquewhite;
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px;
-}
-
