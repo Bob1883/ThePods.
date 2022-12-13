@@ -27,7 +27,8 @@ body {
     width: 100px;
     height: 500px;
     position: fixed;
-    top: 200px;
+    top: 17%;
+    bottom: 20%;
     left: 50px;
     border-radius: 20px;
     padding-top: 75px;
@@ -68,8 +69,19 @@ body {
     transition: var(--transition-time);
 }
 
+.featuredPod p:nth-child(1) {
+    background-color: #00000092;
+    width: fit-content;
+    padding: 10px;
+    border-radius:10px;
+}
+
 .featuredPod p:nth-child(2) {
     font-size: var(--paragraph-size);
+    background-color: #00000092;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .allPodsTitle {
@@ -156,7 +168,7 @@ body {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1450px) {
     .sideNav {
         visibility: hidden;
     }
@@ -203,6 +215,10 @@ body {
         background-color: #ddd;
         color: black;
         transition: var(--transition-time);
+    }
+
+    .popupText {
+        display: block;
     }
 }
 
@@ -366,8 +382,16 @@ body {
     margin: auto;
     margin-top: 10%;
     padding: 20px;
-    height: 500px;
-    width: 700px;
+    height: 63%;
+    width: 90%;
+}
+
+.popupText {
+    display: flex;
+}
+
+.conentContaner {
+    width: 90%;
 }
 
 #closeButton {
