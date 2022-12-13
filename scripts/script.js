@@ -18,6 +18,7 @@ const closeButton = document.getElementById("closeButton");
 const rectangles = document.querySelectorAll(".podCard");
 const stopButton = document.getElementById('stopButton');
 const popupText = document.getElementById("popupText");
+const featured = document.querySelectorAll(".featuredPod");
 const popup = document.getElementById("popup");
 
 function updatePlayPauseButton() {
@@ -99,6 +100,7 @@ audioPlayer.addEventListener('timeupdate', updateProgressBar);
 setInterval(updateProgressBar, 50);
 skipForwardButton.addEventListener('click', skipForward);
 skipBackwardButton.addEventListener('click', skipBackward);
+featured.forEach(rectangle => rectangle.addEventListener("click", () => showPopup(rectangle)));
 rectangles.forEach(rectangle => rectangle.addEventListener("click", () => showPopup(rectangle)));
 popup.addEventListener("click", event => {
     if (event.target === popup) {

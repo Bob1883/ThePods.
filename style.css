@@ -7,7 +7,7 @@ body {
 
 :root {
     --text-color1: white;
-    --text-color2: black;
+    --text-color2: #cacaca;
     --subtitle-size: 50px;
     --paragraph-size: 20px;
     --pod-size: 300px;
@@ -23,7 +23,7 @@ body {
 }
 
 .sideNav {
-    background-color: antiquewhite;
+    background-color: #3A3A3A;
     width: 100px;
     height: 500px;
     position: fixed;
@@ -39,6 +39,7 @@ body {
     text-decoration: none;
     color: var(--text-color2);
     font-size: var(--paragraph-size);
+    transition: var(--transition-time);
 }
 
 .sideNavIcon {
@@ -55,12 +56,15 @@ body {
 
 .featuredPod {
     font-size: 40px;
-    background-color: antiquewhite;
     margin: 3% 20% 10% 20%;
     border-radius: 20px;
     padding: 15px;
-    color: var(--text-color2);
+    color: var(--text-color1);
     text-align: left;
+    background-image: url("img/featured_Bild2.jpg");
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .featuredPod p:nth-child(2) {
@@ -79,12 +83,12 @@ body {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
-    margin: 0px 10% 0px 10%;
+    margin: 0px 10% 10% 10%;
 }
 
 .podCard {
     font-size: var(--paragraph-size);
-    color: var(--text-color2);
+    color: var(--text-color1);
     width: var(--pod-size);
     height: var(--pod-size);
     position: absolute;
@@ -107,7 +111,7 @@ body {
 
 .podCardIMG {
     width: var(--pod-size);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -116,7 +120,7 @@ body {
 }
 
 .podCard:hover .podTitle {
-    z-index: 10;
+    z-index: 2;
 }
 
 
@@ -142,6 +146,14 @@ body {
 .topnav {
     visibility: hidden;
 }
+
+.featuredPod:hover{
+    transform: scale(1.05);
+    transition: var(--transition-time);
+}
+
+
+
 @media only screen and (max-width: 1200px) {
     .sideNav {
         visibility: hidden;
@@ -203,7 +215,7 @@ body {
 .about {
     font-size: var(--paragraph-size);
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #3A3A3A;
     color: var(--text-color2);
     padding: 20px;
     border-radius: 10px;
@@ -220,7 +232,7 @@ body {
 .contact {
     font-size: var(--paragraph-size);
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #3A3A3A;
     color: var(--text-color2);
     padding: 20px;
     border-radius: 10px;
@@ -321,7 +333,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     display: none;
-    z-index: 1;
+    z-index: 3;
     bottom: 0;
     right: 0;
     left: 0;
