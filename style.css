@@ -148,7 +148,7 @@ body {
 }
 
 .featuredPod:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
     transition: var(--transition-time);
 }
 
