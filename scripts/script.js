@@ -79,6 +79,7 @@ function showPopup(rectangle) {
 }
 
 function hidePopup() {
+    stopAudio();
     document.body.style.overflow = "auto";
     popup.classList.add("closed");
     setTimeout(() => {
@@ -95,16 +96,20 @@ playPauseButton.addEventListener('click', () => {
         pauseAudio();
     }
 });
+
 stopButton.addEventListener('click', stopAudio);
 audioPlayer.addEventListener('timeupdate', updateProgressBar);
 setInterval(updateProgressBar, 50);
 skipForwardButton.addEventListener('click', skipForward);
 skipBackwardButton.addEventListener('click', skipBackward);
+
 featured.forEach(rectangle => rectangle.addEventListener("click", () => showPopup(rectangle)));
 rectangles.forEach(rectangle => rectangle.addEventListener("click", () => showPopup(rectangle)));
+
 popup.addEventListener("click", event => {
     if (event.target === popup) {
         hidePopup();
     }
 });
+
 closeButton.addEventListener("click", hidePopup);
