@@ -261,8 +261,13 @@ body {
     border: none;
 }
 
+#stopButton.active {
+    color: #000000;
+}
+
 #stopButton i {
     font-size: 30px;
+    transition: 1s;
 }
 
 
@@ -271,6 +276,7 @@ body {
     background: none;
     margin-right: 1%;
     border: none;
+    cursor: pointer;
 }
 
 #playPauseButton.active {
@@ -312,10 +318,16 @@ body {
     background: none;
     color: #F87060;
     border: none;
+    cursor: pointer;
+}
+
+#skipBackwardButton.active {
+    color: #000000;
 }
 
 #skipBackwardButton i {
     font-size: 30px;
+    transition: 1s;
 }
 
 #skipForwardButton {
@@ -323,10 +335,16 @@ body {
     color: #F87060;
     margin-left: 5%;
     border: none;
+    cursor: pointer;
+}
+
+#skipForwardButton.active {
+    color: #000000;
 }
 
 #skipForwardButton i {
     font-size: 30px;
+    transition: 1s;
 }
 
 #popup {

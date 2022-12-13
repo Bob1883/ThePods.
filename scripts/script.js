@@ -33,10 +33,14 @@ function updatePlayPauseButton() {
 }
 
 function skipForward() {
+    skipForwardButton.classList.add('active');
+    setTimeout(() => skipForwardButton.classList.remove('active'), 200);
     audioPlayer.currentTime += 10;
 }
 
 function skipBackward() {
+    skipBackwardButton.classList.add('active');
+    setTimeout(() => skipBackwardButton.classList.remove('active'), 200);
     audioPlayer.currentTime -= 10;
 }
 
@@ -56,6 +60,8 @@ function pauseAudio() {
 }
 
 function stopAudio() {
+    stopButton.classList.add('active');
+    setTimeout(() => stopButton.classList.remove('active'), 200);
     audioPlayer.pause();
     audioPlayer.currentTime = 0;
     updatePlayPauseButton();
