@@ -65,6 +65,7 @@ body {
     height: 100%;
     background-repeat:no-repeat;
     background-size: cover;
+    transition: var(--transition-time);
 }
 
 .featuredPod p:nth-child(2) {
@@ -112,6 +113,7 @@ body {
 .podCardIMG {
     width: var(--pod-size);
     border-radius: 20px;
+    transition: var(--transition-time);
 }
 
 
