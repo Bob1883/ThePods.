@@ -442,4 +442,9 @@ body {
         height: 65px;
     }
 
+    .allPods {
+        display: block;
+        margin: 0px 10% 0% 10%;
+    }
+
 }
