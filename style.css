@@ -23,7 +23,7 @@ body {
     color: var(--text-color1);
     text-align: center;
     font-size: 100px;
-    margin-top: 45vh;
+    margin-top: 40vh;
 }
 
 .sideNav {
@@ -344,18 +344,18 @@ body {
     display: flex;
 }
 
-.conentContaner {
-    width: 90%;
-}
-
 .closeButton {
     color: #ffffff;
-    background: none;
+    background: #1F1F1F;
     float: right;
     font-size: 200%;
     cursor: pointer;
     border: none;
     top: 0;
+    z-index: 4;
+    border-radius: 10px;
+    margin-top: -5px;
+    margin-right: -3px;
 }
 
 .closeButton:nth-child(2) {
