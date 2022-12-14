@@ -1,536 +1,266 @@
 <!DOCTYPE html>
-
 <html lang="zxx">
-
-
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ThePods</title>
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
 </head>
-
-
-
 <body>
-
     <div id="popup" class="closed">
-
         <div id="popupContent">
-
             <div class="popupText" id="popupText">
-
                 <div style="width: 100%; height: 100%;">
-
                     <audio src="audio_file.mp3" id="audioPlayer"></audio>
-
                     <div class="contentContaner">
-
                         <img class="podBarImage" src="img/progressBar.png" alt="progressBar"
                             style="width: 100%; border-radius: 50px;">
-
                         <div id="controls">
-
                             <button id="skipBackwardButton"><i class="fas fa-backward"></i></button>
-
                             <button id="playPauseButton">
-
                                 <i class="fas fa-play"></i>
-
                             </button>
-
                             <button id="stopButton">
-
                                 <i class="fas fa-stop"></i>
-
                             </button>
-
                             <button id="skipForwardButton"><i class="fas fa-forward"></i></button>
-
                         </div>
-
-
-
                         <div class="progressBarContainer">
-
                             <div id="progressBar2"></div>
-
                             <img class="podImage" src="img/progressBar.png" alt="progress bar">
-
                         </div>
-
                     </div>
-
                 </div>
-
                 <div style="width: 100%; height: 100%; padding: 15px;">
-
                     <button id="closeButton">x</button>
-
                     <h2 style="color: #ffffff;">1</h2>
-
                     <h3 style="color: #cacaca;">1</h3>
-
                 </div>
-
             </div>
-
-
-
         </div>
-
     </div>
-
-
-
     <p class="title">ThePods.</p>
-
     <div class="sideNav">
-
         <a href="#featured">
-
             Featured
-
             <img class="sideNavIcon" src="img/featured.png" alt="Featured">
-
         </a>
-
-
-
         <a href="#allPods">
-
             All pods
-
             <img class="sideNavIcon" src="img/allPods.png" alt="All pods">
-
         </a>
-
-
-
         <a href="#about">
-
             About
-
             <img class="sideNavIcon" src="img/about.png" alt="About">
-
         </a>
-
-
-
         <a href="#contact">
-
             Contact
-
             <img class="sideNavIcon" src="img/contact.png" alt="Contact">
-
         </a>
-
-
-
     </div>
-
     <div class="topnav">
-
         <!-- Navigation links (hidden by default) -->
-
         <div id="myLinks">
-
             <a href="#featured">Featured</a>
-
             <a href="#allPods">All pods</a>
-
             <a href="#about">About</a>
-
             <a href="#contact">Contact</a>
-
         </div>
-
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-
         <a href="javascript:void(0);" class="icon" onclick="myFunction()" style="transition: 1s;">
-
             <i class="fa fa-bars"></i>
-
         </a>
-
     </div>
-
     <div class="featured" id="featured">
-
         <p>Featured pod</p>
-
         <div class="featuredPod" data-text="popup-text-1" data-audio="audio_file.mp3"
             data-image="img/featuredPod_IMG.jpg"
             data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
             <p>Tekinkpodden</p>
-
             <p>Featuring: August, William, Tuva, Tim</p>
-
         </div>
-
     </div>
-
     <p class="allPodsTitle" id="allPods">Pods</p>
-
     <div class="allPods">
-
         <div class="podCountaner">
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_1.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_1.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_2.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_2.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_3.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_3.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
     </div>
-
     <div class="allPods">
-
         <div class="podCountaner">
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_4.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_4.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_5.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_5.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_6.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_6.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
     </div>
-
     <div class="allPods">
-
         <div class="podCountaner">
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_7.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_7.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_8.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_8.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_9.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_9.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
     </div>
-
     <div class="allPods">
-
         <div class="podCountaner">
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_10.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_10.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_11.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_11.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
         <div>
-
             <div class="podCard" data-text="popup-text-1" data-audio="audio_file.mp3" data-image="img/AI_Bild_12.png"
                 data-beskrivning="Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam, sint voluptate temporibus omnis, sunt consequuntur excepturi atque veniam illo ab autem exercitationem inventore velit iure ipsum alias distinctio sapiente?">
-
                 <div class="podTitle">
-
                     <p>Title</p>
-
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit obcaecati at,
-
                         blanditiis ullam facilis fuga, nisi cupiditate ratione dicta rem itaque, officia quod iste
-
                         labore doloribus laboriosam consectetur ipsum.</p>
-
                 </div>
-
                 <img src="img/AI_Bild_12.png" alt="" class="podCardIMG">
-
             </div>
-
             <div class="podCastPlaceHolder"></div>
-
         </div>
-
     </div>
-
     <p class="aboutTitle">About</p>
-
     <div class="about" id="about">
-
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eaque, earum soluta quisquam officia nulla
-
             recusandae in veniam suscipit autem sequi distinctio, ut sed repellat commodi, adipisci eius aliquid
-
             quibusdam.</p>
-
     </div>
-
     <p class="contactTitle">Contact</p>
-
     <div class="contact" id="contact">
-
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eaque, earum soluta quisquam officia nulla
-
             recusandae in veniam suscipit autem sequi distinctio, ut sed repellat commodi, adipisci eius aliquid
-
             quibusdam.</p>
-
-
-
         <img src="img/phone.png" alt="phone" width="75">
-
         <img src="img/mail.png" alt="mail" width="75">
-
     </div>
-
     <script src="scripts/script.js"></script>
-
 </body>
-
 </html>
