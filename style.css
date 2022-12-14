@@ -328,59 +328,8 @@ body {
 
 
 
-@media only screen and (max-width: 1450px) {
-    .sideNav {
-        visibility: hidden;
-    }
-    /* Style the navigation menu */
-    .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 80px;
-        right: 2%;
-        transition: var(--transition-time);
-        visibility: visible;
-        z-index: 20;
-    }
-    
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-        display: none;
-        transition: var(--transition-time);
-    }
-    
-    /* Style navigation menu links */
-    .topnav a {
-        color: white;
-        padding: 20px 20px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-        transition: var(--transition-time);
-    }
-    
-    /* Style the hamburger menu */
-    .topnav a.icon {
-        content: url(/img/menu.png);
-        width: 20px;
-        position: fixed;
-        display: block;
-        right: 2%;
-        top: 20px;
-    }
-    
-    /* Add a grey background color on mouse-over */
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-        transition: var(--transition-time);
-    }
 
-    .popupText {
-        display: block;
-    }
-}
+
 
 
 /* ABOUT */
@@ -591,7 +540,10 @@ body {
 
 }
 
+ 
+
 #progressBar2 {
+
     background-color: #F87060;
 
     margin-left: 3%;
@@ -681,7 +633,9 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 
     position: fixed;
+
     display: none;
+
     z-index: 3;
 
     bottom: 0;
@@ -703,11 +657,18 @@ body {
     border-radius: 50px;
 
     margin: auto;
+
     margin-top: 10%;
+
     padding: 20px;
-    height: 63%;
-    width: 90%;
+
+    height: auto;
+
+    width: 500px    ;
+
 }
+
+ 
 
 .popupText {
 
@@ -715,13 +676,18 @@ body {
 
 }
 
+ 
+
 .conentContaner {
 
     width: 90%;
 
 }
 
+ 
+
 #closeButton {
+
     color: #ffffff;
 
     background: none;
@@ -900,85 +866,4 @@ body {
 
     }
 
-}
-
-.closeButton:nth-child(2) {
-    display: none;
-}
-
-@media only screen and (max-width: 1450px) {
-    .sideNav {
-        visibility: hidden;
-    }
-    /* Style the navigation menu */
-    .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 80px;
-        right: 2%;
-        transition: var(--transition-time);
-        visibility: visible;
-        z-index: 2;
-    }
-    
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-        display: none;
-        transition: var(--transition-time);
-    }
-    
-    /* Style navigation menu links */
-    .topnav a {
-        color: white;
-        padding: 20px 20px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-        transition: var(--transition-time);
-    }
-    
-    /* Style the hamburger menu */
-    .topnav a.icon {
-        content: url(/img/menu.png);
-        width: 20px;
-        position: fixed;
-        display: block;
-        right: 2%;
-        top: 20px;
-    }
-    
-    /* Add a grey background color on mouse-over */
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-        transition: var(--transition-time);
-    }
-
-    .popupText {
-        display: block;
-    }
-
-    #popupContent {
-        margin: auto;
-        margin-top: 5%;
-        height: fit-content;
-    }
-
-    .closeButton:nth-child(1) {
-        display: none;
-    }
-    .closeButton:nth-child(2) {
-        display: block;
-    }
-
-    .popupText div{
-        width: 100%;
-        text-align: center;
-    }
-
-    .podBarImage {
-        width: 80%;
-        text-align: center
-    }
 }
