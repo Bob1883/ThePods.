@@ -102,6 +102,11 @@ body {
     margin: 0px 10% 10% 10%;
 }
 
+.allPods div {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 .podCard {
     font-size: var(--paragraph-size);
     color: var(--text-color1);
@@ -448,11 +453,7 @@ body {
 
     .allPods {
         display: block;
-        margin: 0px 10% 0% 10%;
-    }
-
-    .podCard {
-        position: relative;
+        margin: 0px 10% 0% 10%;     
     }
 
     .closeButton:nth-child(1) {
