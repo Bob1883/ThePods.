@@ -814,6 +814,11 @@ body {
 
     }
 
+    .featuredPod {
+        margin: 3% 10% 10% 10%;
+        text-align: center;
+    }
+
  
 
     #popupContent {
