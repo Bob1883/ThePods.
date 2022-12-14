@@ -343,7 +343,7 @@ body {
     width: 90%;
 }
 
-#closeButton {
+.closeButton {
     color: #ffffff;
     background: none;
     float: right;
@@ -351,6 +351,10 @@ body {
     cursor: pointer;
     border: none;
     top: 0;
+}
+
+.closeButton:nth-child(2) {
+    display: none;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -447,4 +451,15 @@ body {
         margin: 0px 10% 0% 10%;
     }
 
+    .podCard {
+        position: relative;
+    }
+
+    .closeButton:nth-child(1) {
+        display: none;
+    }
+
+    .closeButton:nth-child(2) {
+        display:block;
+    }
 }

@@ -14,7 +14,7 @@ const playPauseButton = document.getElementById('playPauseButton');
 const progressBar2 = document.getElementById('progressBar2');
 const progressBar = document.getElementById('progressBar');
 const audioPlayer = document.getElementById('audioPlayer');
-const closeButton = document.getElementById("closeButton");
+const closeButton = document.querySelectorAll(".closeButton");
 const rectangles = document.querySelectorAll(".podCard");
 const stopButton = document.getElementById('stopButton');
 const popupText = document.getElementById("popupText");
@@ -117,5 +117,4 @@ popup.addEventListener("click", event => {
         hidePopup();
     }
 });
-
-closeButton.addEventListener("click", hidePopup);
+closeButton.forEach(rectangle => rectangle.addEventListener("click", () => hidePopup()));
