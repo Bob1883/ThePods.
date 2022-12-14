@@ -276,6 +276,10 @@ body {
     overflow: hidden;
 }
 
+.podBarImage {
+    margin: 0px;
+}
+
 #progressBar2 {
     background-color: #F87060;
     margin-left: 3%;
@@ -463,4 +467,8 @@ body {
     .closeButton:nth-child(2) {
         display:block;
     }
+    
+    .podBarImage {
+        margin-top: -20px;
+    } 
 }
