@@ -65,7 +65,7 @@ body {
     padding: 15px;
     color: var(--text-color1);
     text-align: left;
-    background-image: url("./assets/podCardImage/featured_Bild.jpg");
+    background-image: url("./assets/podCardImage/featuredImg.jpg");
     height: 100%;
     background-repeat:no-repeat;
     background-size: cover;
