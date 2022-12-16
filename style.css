@@ -9,6 +9,7 @@ body {
     margin-bottom: 2%;
 }
 
+/* Variables */
 :root {
     --text-color1: white;
     --text-color2: #cacaca;
@@ -19,6 +20,7 @@ body {
     --pod-title: 40px;
 }
 
+/* Title */
 .title {
     color: var(--text-color1);
     text-align: center;
@@ -26,6 +28,7 @@ body {
     margin-top: 40vh;
 }
 
+/* Side navigation bar */
 .sideNav {
     background-color: #3A3A3A;
     width: 100px;
@@ -52,6 +55,7 @@ body {
     margin-bottom: 35px;
 }
 
+/* Featured pod */
 .featured {
     text-align: center;
     margin-top: 50vh;
@@ -87,6 +91,7 @@ body {
     border-radius: 10px;
 }
 
+/* Pod cards */
 .allPodsTitle {
     text-align: center;
     font-size: var(--subtitle-size);
@@ -161,7 +166,7 @@ body {
     height: var(--pod-size);
 }
 
-/* TOP NAVIGATION */
+/* Top navigation bar */
 .topnav {
     visibility: hidden;
 }
@@ -171,7 +176,7 @@ body {
     transition: var(--transition-time);
 }
 
-/* ABOUT */
+/* About */
 .aboutTitle {
     font-size: var(--subtitle-size);
     text-align: center;
@@ -188,7 +193,7 @@ body {
     margin: 0px 15% 20px 15%;
 }
 
-/* CONTACT */
+/* Contact */
 .contactTitle {
     font-size: var(--subtitle-size);
     text-align: center;
@@ -215,6 +220,7 @@ body {
     float: right ;
 }
 
+/* Audio player */
 #controls {
     justify-content: center;
     align-items: center;
@@ -258,6 +264,7 @@ body {
     transition: 1s;
 }
 
+/* Popup content */
 .progressBarContainer {
     background-color: #f86f606a;
     position: relative;
@@ -278,9 +285,10 @@ body {
 
 .podBarImage {
     margin: 0px;
+    pointer-events: none;
 }
 
-#progressBar2 {
+#progressBar {
     background-color: #F87060;
     margin-left: 3%;
     transition: 2s;
@@ -366,6 +374,7 @@ body {
     display: none;
 }
 
+/* Mobile responsive */
 @media only screen and (max-width: 1450px) {
     .sideNav {
         visibility: hidden;
@@ -416,13 +425,15 @@ body {
         transition: var(--transition-time);
     }
 
-    .popupText {
-        display: block;
-    }
-
+    /* Featured pod margin fix */
     .featuredPod {
         margin: 3% 10% 10% 10%;
         text-align: center;
+    }
+
+    /* Popup content relocated */
+    .popupText {
+        display: block;
     }
 
     #popupContent {
@@ -451,15 +462,17 @@ body {
         height: auto;
     }
 
-    #progressBar2 {
+    #progressBar {
         height: 65px;
     }
 
+    /* All pods in row */
     .allPods {
         display: block;
         margin: 0px 10% 0% 10%;     
     }
 
+    /* Change to second close button */
     .closeButton:nth-child(1) {
         display: none;
     }
@@ -468,6 +481,7 @@ body {
         display:block;
     }
     
+    /* Move up popup pod image  */
     .podBarImage {
         margin-top: -20px;
     } 
