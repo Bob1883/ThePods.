@@ -1,3 +1,4 @@
+/* GLOBAL CSS */
 html {
     scroll-behavior: smooth;
 }
@@ -9,7 +10,8 @@ body {
     margin-bottom: 2%;
 }
 
-/* Variables */
+
+/* VARIABLES */
 :root {
     --text-color1: white;
     --text-color2: #cacaca;
@@ -20,7 +22,8 @@ body {
     --pod-title: 40px;
 }
 
-/* Title */
+
+/* TITLE */
 .title {
     color: var(--text-color1);
     text-align: center;
@@ -28,7 +31,7 @@ body {
     margin-top: 40vh;
 }
 
-/* Side navigation bar */
+/* SIDE NAVIGATION BAR */
 .sideNav {
     background-color: #3A3A3A;
     width: 100px;
@@ -55,7 +58,8 @@ body {
     margin-bottom: 35px;
 }
 
-/* Featured pod */
+
+/* FEATURED POD */
 .featured {
     text-align: center;
     margin-top: 50vh;
@@ -91,7 +95,7 @@ body {
     border-radius: 10px;
 }
 
-/* Pod cards */
+/* POD CARDS */
 .allPodsTitle {
     text-align: center;
     font-size: var(--subtitle-size);
@@ -166,7 +170,7 @@ body {
     height: var(--pod-size);
 }
 
-/* Top navigation bar */
+/* TOP NAVIGATION BAR */
 .topnav {
     visibility: hidden;
 }
@@ -176,7 +180,8 @@ body {
     transition: var(--transition-time);
 }
 
-/* About */
+
+/* ABOUT */
 .aboutTitle {
     font-size: var(--subtitle-size);
     text-align: center;
@@ -193,7 +198,8 @@ body {
     margin: 0px 15% 20px 15%;
 }
 
-/* Contact */
+
+/* CONTACT */
 .contactTitle {
     font-size: var(--subtitle-size);
     text-align: center;
@@ -210,17 +216,22 @@ body {
     margin: 0px 15% 20px 15%;
 }
 
+
+/* Phone contact image */
 .contact img:nth-child(1) {
     float: left;
     margin: 0 20%;
 }
 
+
+/* Mail contact image */
 .contact img:nth-child(2) {
     float: right;
     margin: 0 20%;
 }
 
-/* Audio player */
+
+/* AUDIO PLAYER */
 #controls {
     justify-content: center;
     align-items: center;
@@ -229,6 +240,8 @@ body {
     width: 100%;
 }
 
+
+/* Stop and restart button */
 #stopButton {
     color: #F87060;
     background: none;
@@ -247,6 +260,8 @@ body {
     transition: 1s;
 }
 
+
+/* Play and pause control */
 #playPauseButton {
     color: #F87060;
     background: none;
@@ -263,6 +278,7 @@ body {
     font-size: 30px;
     transition: 1s;
 }
+
 
 /* Popup content */
 .progressBarContainer {
@@ -297,6 +313,8 @@ body {
     z-index: 1;
 }
 
+
+/* Skiforward music control */
 #skipBackwardButton {
     margin-right: 5%;
     background: none;
@@ -331,6 +349,8 @@ body {
     transition: 1s;
 }
 
+
+/* POPUP */
 #popup {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
@@ -356,6 +376,7 @@ body {
     display: flex;
 }
 
+/* Close button on popup */
 .closeButton {
     color: #ffffff;
     background: #1F1F1F;
@@ -374,11 +395,13 @@ body {
     display: none;
 }
 
-/* Mobile responsive */
+
+/* MOBILE RESPONSIVE */
 @media only screen and (max-width: 1450px) {
     .sideNav {
         visibility: hidden;
     }
+
 
     /* Style the navigation menu */
     .topnav {
@@ -392,11 +415,13 @@ body {
         z-index: 20;
     }
 
+
     /* Hide the links inside the navigation menu (except for logo/home) */
     .topnav #myLinks {
         display: none;
         transition: var(--transition-time);
     }
+
 
     /* Style navigation menu links */
     .topnav a {
@@ -408,6 +433,7 @@ body {
         transition: var(--transition-time);
     }
 
+
     /* Style the hamburger menu */
     .topnav a.icon {
         content: url("./assets/icons/menu.png");
@@ -418,12 +444,14 @@ body {
         top: 20px;
     }
 
+
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
         background-color: #ddd;
         color: black;
         transition: var(--transition-time);
     }
+
 
     /* Featured pod margin fix */
     .featuredPod {
@@ -435,6 +463,7 @@ body {
     .popupText {
         display: block;
     }
+
 
     #popupContent {
         background-color: #3A3A3A;
@@ -466,11 +495,13 @@ body {
         height: 65px;
     }
 
+
     /* All pods in row */
     .allPods {
         display: block;
         margin: 0px 10% 0% 10%;
     }
+
 
     /* Change to second close button */
     .closeButton:nth-child(1) {
@@ -481,10 +512,12 @@ body {
         display: block;
     }
 
+
     /* Move up popup pod image  */
     .podBarImage {
         margin-top: -20px;
     }
+
 
     /* Resposive contact icons */
     .contact img:nth-child(1) {
