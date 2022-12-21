@@ -71,7 +71,7 @@ body {
     text-align: left;
     background-image: url("./assets/podCardImage/featuredImg.jpg");
     height: 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     transition: var(--transition-time);
 }
@@ -80,7 +80,7 @@ body {
     background-color: #00000092;
     width: fit-content;
     padding: 10px;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .featuredPod p:nth-child(2) {
@@ -128,7 +128,7 @@ body {
     position: absolute;
 }
 
-.podTitle:hover{
+.podTitle:hover {
     opacity: 100%;
     filter: none;
     top: 0;
@@ -149,7 +149,7 @@ body {
     z-index: 2;
 }
 
-.podCard p:nth-child(1){
+.podCard p:nth-child(1) {
     font-size: var(--pod-title);
 }
 
@@ -160,7 +160,7 @@ body {
     border-radius: 10px;
 }
 
-.podContaner{
+.podContaner {
     position: relative;
     width: var(--pod-size);
     height: var(--pod-size);
@@ -171,7 +171,7 @@ body {
     visibility: hidden;
 }
 
-.featuredPod:hover{
+.featuredPod:hover {
     transform: scale(1.01);
     transition: var(--transition-time);
 }
@@ -210,21 +210,16 @@ body {
     margin: 0px 15% 20px 15%;
 }
 
-.contact img:nth-child(1) {
-    margin: 0 20%;
-    float: left ;
-}
-
 .contact img:nth-child(2) {
     margin: 0 20%;
-    float: right ;
+    float: right;
 }
 
 /* Audio player */
 #controls {
     justify-content: center;
     align-items: center;
-    margin: 3% 0 3% 0 ;
+    margin: 3% 0 3% 0;
     display: flex;
     width: 100%;
 }
@@ -349,7 +344,7 @@ body {
     margin-top: 10%;
     padding: 20px;
     height: auto;
-    width: 500px    ;
+    width: 500px;
 }
 
 .popupText {
@@ -443,7 +438,7 @@ body {
         margin-top: 10%;
         padding: 20px;
         height: 63%;
-        width: 300px    ;
+        width: 300px;
     }
 
     .popupText div:nth-child(1) {
@@ -469,7 +464,7 @@ body {
     /* All pods in row */
     .allPods {
         display: block;
-        margin: 0px 10% 0% 10%;     
+        margin: 0px 10% 0% 10%;
     }
 
     /* Change to second close button */
@@ -478,11 +473,13 @@ body {
     }
 
     .closeButton:nth-child(2) {
-        display:block;
+        display: block;
     }
-    
+
     /* Move up popup pod image  */
     .podBarImage {
         margin-top: -20px;
-    } 
+    }
+
+    .contact img:nth-child(2) {}
 }
