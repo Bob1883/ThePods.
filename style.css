@@ -210,9 +210,14 @@ body {
     margin: 0px 15% 20px 15%;
 }
 
-.contact img:nth-child(2) {
+.contact img:nth-child(1) {
+    float: left;
     margin: 0 20%;
+}
+
+.contact img:nth-child(2) {
     float: right;
+    margin: 0 20%;
 }
 
 /* Audio player */
@@ -481,5 +486,14 @@ body {
         margin-top: -20px;
     }
 
-    .contact img:nth-child(2) {}
+    /* Resposive contact icons */
+    .contact img:nth-child(1) {
+        float: left;
+        margin: 0 0 0 20%;
+    }
+    
+    .contact img:nth-child(2) {
+        float: right;
+        margin: 0 20% 0 0;
+    }
 }
